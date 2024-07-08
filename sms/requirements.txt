@@ -1,0 +1,5 @@
+streamlit==1.26.0
+pandas
+streamlit_authenticator==0.1.5
+streamlit_option-menu
+streamlit_pandas_profiling

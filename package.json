@@ -1,0 +1,40 @@
+{
+  "name": "sms",
+  "version": "0.1.0",
+  "main": "main.js",
+  "scripts": {
+    "dump": "dump-stlite-desktop-artifacts",
+    "build": "npm run dump",
+    "serve": "NODE_ENV=production electron .",
+    "servewindows": "npm run build && electron .",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder",
+    "postinstall": "electron-builder install-app-deps",
+    "start": "electron ."
+  },
+  "build": {
+    "files": [
+      "build/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  },
+  "devDependencies": {
+    "@stlite/desktop": "^0.57.0",
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3"
+  },
+  "stlite": {
+    "desktop": {
+      "files": [
+        "C://Users//Lavina//Downloads//SMS2//sms//Main.py"
+      ],
+      "entrypoint": "C://Users//Lavina//Downloads//SMS2//sms//Main.py"
+    }
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
